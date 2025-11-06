@@ -79,7 +79,7 @@ vetelkedo
 │  ├─ JatekModell.java
 │  └─ JatekosModell.java
 ├─ nezet
-│  └─ JatekNezet.java (GUI)
+│  └─ GuiJatekNezet.java (GUI)
 └─ vezerlo
    └─ JatekVezerlo.java
 ```
