@@ -36,17 +36,17 @@ A programnak rendelkeznie kell a következő funkciókkal:
 ## 3. Tervezési szempontok
 
 ### Architektúra
-- MVC (Model-View-Controller) minta alkalmazása:
+- MVC (Model-Nezet-Vezerlo) minta alkalmazása:
   - **Model**: A játék logikája (ajtók, nyeremény, játékos választása).
-  - **View**: Felhasználói felület (GUI).
-  - **Controller**: Játék irányítása, események kezelése.
+  - **Nezet**: Felhasználói felület (GUI).
+  - **Vezerlo**: Játék irányítása, események kezelése.
 
 ### Osztályterv
-- **Door**: Egy ajtót reprezentál (nyeremény, nyitott/zárt állapot).
-- **Game**: Játék logikája (ajtók generálása, nyeremény elhelyezése, eredmény kiszámítása).
-- **Player**: Játékos választása, döntésváltás kezelése.
-- **GameController**: A játék menetét vezérli, kommunikál a Model-lel és a View-val.
-- **GameView**: GUI, interaktív felület, ahol a játékos választhat és láthatja az eredményt.
+- **AjtoModell**: Egy ajtót reprezentál (nyeremény, nyitott/zárt állapot).
+- **JatekModell**: Játék logikája (ajtók generálása, nyeremény elhelyezése, eredmény kiszámítása).
+- **JatekosModell**: Játékos választása, döntésváltás kezelése.
+- **JatekVezerlo**: A játék menetét vezérli, kommunikál a Model-lel és a Nezet-el.
+- **JatekNezet**: GUI, interaktív felület, ahol a játékos választhat és láthatja az eredményt.
 
 ### Funkcionális követelmények
 - Véletlenszerű nyeremény-elhelyezés.
@@ -78,6 +78,6 @@ vetelkedo
 │ ├─ JatekModell.java
 │ └─ JatekosModell.java
 ├─ nezet
-│ └─ JatekNezet.java
+│ └─ JatekNezet.java (GUI)
 └─ vezerlo
-└─ JatekVezerlo.java
+  └─ JatekVezerlo.java
