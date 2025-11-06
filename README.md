@@ -79,7 +79,8 @@ vetelkedo
 │  ├─ JatekModell.java
 │  └─ JatekosModell.java
 ├─ nezet
-│  └─ GuiJatekNezet.java (GUI)
+│  ├─ GuiJatekNezet.java (GUI)
+   └─ ajto.png
 └─ vezerlo
    └─ JatekVezerlo.java
 ```
