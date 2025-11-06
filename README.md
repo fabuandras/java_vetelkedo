@@ -1,4 +1,4 @@
-# Dokumentáció: Vetélkedő (Monty Hall) Játék
+# Vetélkedő (Monty Hall) Játék
 
 ## 1. Feladat leírása
 A Vetélkedő egy egyszerű szerencsejáték-szimuláció, amely a klasszikus Monty Hall-problémán alapul.  
