@@ -5,22 +5,24 @@ import java.util.List;
 import java.util.Random;
 
 public class JatekModell {
+
     private List<AjtoModell> ajtok;
     private JatekosModell jatekos;
+    private Random rnd = new Random();
 
     public JatekModell() {
-        ajtok = new ArrayList<>();
-        jatekos = new JatekosModell();
+        this.ajtok = new ArrayList<>();
         ujJatek();
     }
 
     public void ujJatek() {
         ajtok.clear();
-        Random rnd = new Random();
-        int nyeremenyIndex = rnd.nextInt(3);
+        int nyeremeny = rnd.nextInt(3);
+
         for (int i = 0; i < 3; i++) {
-            ajtok.add(new AjtoModell(i == nyeremenyIndex, false));
+            ajtok.add(new AjtoModell(i == nyeremeny, false));
         }
+
         jatekos.setValasztottAjto(-1);
         jatekos.setValtoztat(false);
     }
@@ -33,11 +35,11 @@ public class JatekModell {
         return jatekos;
     }
 
-    /** Nem getter, hanem logika: visszaadja, melyik ajtót fedheti fel a műsorvezető. */
     public int kivalasztMusorvezetoAjtot() {
         int valasztott = jatekos.getValasztottAjto();
-        if (valasztott < 0) return -1; // még nincs választás
-
+        if (valasztott < 0) {
+            return -1;
+        }
         for (int i = 0; i < ajtok.size(); i++) {
             if (i != valasztott && !ajtok.get(i).isNyeremeny()) {
                 return i;

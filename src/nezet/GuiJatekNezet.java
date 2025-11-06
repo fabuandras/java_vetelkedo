@@ -1,18 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package nezet;
 
-/**
- *
- * @author fabu.a.norbert
- */
 public class GuiJatekNezet extends javax.swing.JFrame {
 
-    /**
-     * Creates new form JatekNezet
-     */
     public GuiJatekNezet() {
         initComponents();
     }
@@ -26,61 +15,226 @@ public class GuiJatekNezet extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        pnlAjtoValasztas = new javax.swing.JPanel();
+        pnlAjtok = new javax.swing.JPanel();
+        lblElsoAjto = new javax.swing.JLabel();
+        lblHarmadikAjto = new javax.swing.JLabel();
+        lblMasodikAjto = new javax.swing.JLabel();
+        pnlAjtokSorszama = new javax.swing.JPanel();
+        lblSorszam2 = new javax.swing.JLabel();
+        lblSorszam1 = new javax.swing.JLabel();
+        lblSorszam3 = new javax.swing.JLabel();
+        pnlAjtoValaszt = new javax.swing.JPanel();
+        btnElsoAjtoValasztoGomb = new javax.swing.JButton();
+        btnMasodikAjtoValasztoGomb = new javax.swing.JButton();
+        btnHarmadikAjtoValasztoGomb = new javax.swing.JButton();
+        btnUjJatek = new javax.swing.JButton();
+        pnlEredmeny = new javax.swing.JPanel();
+        scrEredmeny = new javax.swing.JScrollPane();
+        jtxtaEredmeny = new javax.swing.JTextArea();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu2 = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Vetélkedő (Monty Hall) Játék");
         setResizable(false);
+
+        pnlAjtoValasztas.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Ajtó választás"));
+
+        lblElsoAjto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nezet/ajto.png"))); // NOI18N
+
+        lblHarmadikAjto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nezet/ajto.png"))); // NOI18N
+
+        lblMasodikAjto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nezet/ajto.png"))); // NOI18N
+
+        javax.swing.GroupLayout pnlAjtokLayout = new javax.swing.GroupLayout(pnlAjtok);
+        pnlAjtok.setLayout(pnlAjtokLayout);
+        pnlAjtokLayout.setHorizontalGroup(
+            pnlAjtokLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAjtokLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblElsoAjto)
+                .addGap(65, 65, 65)
+                .addComponent(lblMasodikAjto)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                .addComponent(lblHarmadikAjto)
+                .addContainerGap())
+        );
+        pnlAjtokLayout.setVerticalGroup(
+            pnlAjtokLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAjtokLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlAjtokLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblElsoAjto)
+                    .addComponent(lblHarmadikAjto)
+                    .addComponent(lblMasodikAjto))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        lblSorszam2.setText("2. ajtó");
+
+        lblSorszam1.setText("1. ajtó");
+
+        lblSorszam3.setText("3. ajtó");
+
+        javax.swing.GroupLayout pnlAjtokSorszamaLayout = new javax.swing.GroupLayout(pnlAjtokSorszama);
+        pnlAjtokSorszama.setLayout(pnlAjtokSorszamaLayout);
+        pnlAjtokSorszamaLayout.setHorizontalGroup(
+            pnlAjtokSorszamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAjtokSorszamaLayout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(lblSorszam1)
+                .addGap(142, 142, 142)
+                .addComponent(lblSorszam2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblSorszam3)
+                .addGap(43, 43, 43))
+        );
+        pnlAjtokSorszamaLayout.setVerticalGroup(
+            pnlAjtokSorszamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAjtokSorszamaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlAjtokSorszamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSorszam1)
+                    .addComponent(lblSorszam2)
+                    .addComponent(lblSorszam3))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        btnElsoAjtoValasztoGomb.setText("Választ");
+
+        btnMasodikAjtoValasztoGomb.setText("Választ");
+
+        btnHarmadikAjtoValasztoGomb.setText("Választ");
+
+        javax.swing.GroupLayout pnlAjtoValasztLayout = new javax.swing.GroupLayout(pnlAjtoValaszt);
+        pnlAjtoValaszt.setLayout(pnlAjtoValasztLayout);
+        pnlAjtoValasztLayout.setHorizontalGroup(
+            pnlAjtoValasztLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAjtoValasztLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(btnElsoAjtoValasztoGomb)
+                .addGap(102, 102, 102)
+                .addComponent(btnMasodikAjtoValasztoGomb)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnHarmadikAjtoValasztoGomb)
+                .addGap(24, 24, 24))
+        );
+        pnlAjtoValasztLayout.setVerticalGroup(
+            pnlAjtoValasztLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAjtoValasztLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlAjtoValasztLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnHarmadikAjtoValasztoGomb)
+                    .addComponent(btnMasodikAjtoValasztoGomb)
+                    .addComponent(btnElsoAjtoValasztoGomb))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout pnlAjtoValasztasLayout = new javax.swing.GroupLayout(pnlAjtoValasztas);
+        pnlAjtoValasztas.setLayout(pnlAjtoValasztasLayout);
+        pnlAjtoValasztasLayout.setHorizontalGroup(
+            pnlAjtoValasztasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAjtoValasztasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlAjtoValasztasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnlAjtokSorszama, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlAjtok, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlAjtoValaszt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        pnlAjtoValasztasLayout.setVerticalGroup(
+            pnlAjtoValasztasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAjtoValasztasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlAjtok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnlAjtokSorszama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnlAjtoValaszt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        btnUjJatek.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnUjJatek.setText("Új játék");
+
+        pnlEredmeny.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Eredmény"));
+
+        jtxtaEredmeny.setColumns(20);
+        jtxtaEredmeny.setRows(5);
+        scrEredmeny.setViewportView(jtxtaEredmeny);
+
+        javax.swing.GroupLayout pnlEredmenyLayout = new javax.swing.GroupLayout(pnlEredmeny);
+        pnlEredmeny.setLayout(pnlEredmenyLayout);
+        pnlEredmenyLayout.setHorizontalGroup(
+            pnlEredmenyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlEredmenyLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(scrEredmeny)
+                .addContainerGap())
+        );
+        pnlEredmenyLayout.setVerticalGroup(
+            pnlEredmenyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlEredmenyLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(scrEredmeny, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jMenu2.setText("Kilépés");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnlAjtoValasztas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnUjJatek, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlEredmeny, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlAjtoValasztas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(pnlEredmeny, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnUjJatek, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GuiJatekNezet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GuiJatekNezet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GuiJatekNezet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GuiJatekNezet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new GuiJatekNezet().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnElsoAjtoValasztoGomb;
+    private javax.swing.JButton btnHarmadikAjtoValasztoGomb;
+    private javax.swing.JButton btnMasodikAjtoValasztoGomb;
+    private javax.swing.JButton btnUjJatek;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JTextArea jtxtaEredmeny;
+    private javax.swing.JLabel lblElsoAjto;
+    private javax.swing.JLabel lblHarmadikAjto;
+    private javax.swing.JLabel lblMasodikAjto;
+    private javax.swing.JLabel lblSorszam1;
+    private javax.swing.JLabel lblSorszam2;
+    private javax.swing.JLabel lblSorszam3;
+    private javax.swing.JPanel pnlAjtoValaszt;
+    private javax.swing.JPanel pnlAjtoValasztas;
+    private javax.swing.JPanel pnlAjtok;
+    private javax.swing.JPanel pnlAjtokSorszama;
+    private javax.swing.JPanel pnlEredmeny;
+    private javax.swing.JScrollPane scrEredmeny;
     // End of variables declaration//GEN-END:variables
 }

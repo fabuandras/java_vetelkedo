@@ -4,7 +4,7 @@ public class JatekosModell {
     private boolean valtoztat;
     private int valasztottAjto;
 
-    public JatekosModell() {
+    public void JatekosModell() {
         this.valtoztat = false;
         this.valasztottAjto = -1;
     }
@@ -13,6 +13,7 @@ public class JatekosModell {
         this.valtoztat = valtoztat;
         this.valasztottAjto = valasztottAjto;
     }
+    
     public boolean isValtoztat() {
         return valtoztat;
     }
