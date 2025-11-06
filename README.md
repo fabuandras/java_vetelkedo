@@ -70,14 +70,16 @@ A programnak rendelkeznie kell a következő funkciókkal:
 
 ## Alapszerkezet
 
+```
 vetelkedo
 ├─ main
-│ └─ Vetelkedo.java
+│  └─ Vetelkedo.java
 ├─ model
-│ ├─ AjtoModell.java
-│ ├─ JatekModell.java
-│ └─ JatekosModell.java
+│  ├─ AjtoModell.java
+│  ├─ JatekModell.java
+│  └─ JatekosModell.java
 ├─ nezet
-│ └─ JatekNezet.java (GUI)
+│  └─ JatekNezet.java (GUI)
 └─ vezerlo
-  └─ JatekVezerlo.java
+   └─ JatekVezerlo.java
+```
